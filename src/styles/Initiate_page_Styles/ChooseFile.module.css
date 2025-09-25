@@ -1,0 +1,113 @@
+
+.bulkUploadFrame {
+  background: transparent;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #101928;
+  margin-bottom: 8px;
+}
+
+.uploadBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px dashed #c6c6c6;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #fff;
+  gap: 16px;
+}
+
+.chooseFileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 180px;
+}
+
+.chooseFileLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+  gap: 8px;
+}
+
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #f0f2f5;
+  border-radius: 50%;
+}
+
+.cloudIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.chooseFileText {
+  font-weight: 600;
+  color: #222;
+}
+
+.fileInfo {
+  font-size: 12px;
+  color: #98a2b3;
+  margin-top: 2px;
+}
+
+.dot {
+  margin: 0 4px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.uploadBtn, .templateBtn {
+  background: #fff;
+  color: #38aee0;
+  border: 1px solid #38aee0;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s;
+  outline: none;
+}
+.uploadBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.selectedFile {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #222;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.size {
+  color: #98a2b3;
+}

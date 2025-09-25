@@ -1,0 +1,91 @@
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.selected {
+  background: #f5f6fa;
+  border-radius: 20px;
+  color: #222;
+}
+
+.selected .optionText {
+  color: #222;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.label {
+  font-family: 'Samsung InterFace', 'Segoe UI', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #101928;
+  margin-bottom: 8px;
+}
+
+.optionsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Samsung InterFace', 'Segoe UI', Arial, sans-serif;
+  color: #333;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.optionText {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.selected .optionText {
+  color: #333;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #38aee0;
+  background: #fff;
+  margin-right: 8px;
+}
+
+.radioUnchecked {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.radioChecked {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #38aee0;
+}
+
+.option:not(.selected) .radio {
+  border: 2px solid #a9a8aa;
+}
+
+.option:not(.selected) .optionText {
+  color: #6e6e6e;
+  font-weight: normal;
+}

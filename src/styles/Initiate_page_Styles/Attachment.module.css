@@ -1,0 +1,103 @@
+.attachmentFrame {
+  width: 100%;
+  max-width: 420px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #101928;
+  margin-bottom: 8px;
+}
+
+.attachmentBox {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px dashed #c6c6c6;
+  border-radius: 8px;
+  padding: 10px 16px;
+  gap: 16px;
+}
+
+.pdfIconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 50px;
+  background: #fff;
+  border-radius: 6px;
+  border: none;
+}
+
+.pdfIcon {
+  width: 48px;
+  height: 90px;
+}
+
+.fileInfoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fileNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.fileName {
+  font-weight: 600;
+  color: #222;
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.fileMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #98a2b3;
+}
+
+.fileMeta {
+  color: #98a2b3;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: #98a2b3;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fileSize {
+  color: #98a2b3;
+}
+
+.downloadBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0 0 8px;
+  display: flex;
+  align-items: center;
+}
+
+.downloadIcon {
+  width: 32px;
+  height: 32px;
+  color: #d42620;
+  margin-right: 15px;
+}
