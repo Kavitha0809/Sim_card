@@ -82,6 +82,8 @@ const SimCard2 = ({ data = defaultData, onSelectionChange }) => {
     <div style={ui.container}>
       <div style={ui.greySection}>
         <InitiationType />
+      <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 24px 0' }}>SIM Card Details</div>
+
         <EmployeeTransfer3
       value={employee}
       onChange={(value) => setEmployee(value)}
@@ -112,7 +114,7 @@ const SimCard2 = ({ data = defaultData, onSelectionChange }) => {
         </div>
 
         {/* Adding the form directly under the table, still inside greySection */}
-        <div style={{ marginTop: 16 }}>
+  <div style={{ marginTop: -16 }}>
           <SimCardForm onSubmit={(formData) => console.log('Form submitted:', formData)} />
         </div>
       </div>

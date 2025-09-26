@@ -79,22 +79,21 @@ const SimCard3 = ({ data = defaultData, onSelectionChange }) => {
     <div style={ui.container}>
       <div style={ui.greySection}>
         <InitiationTypeReport1 />
+        <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 8px 0' }}>SIM Card Details</div>
         <div style={{ marginTop: 24, marginBottom: 24 }}>
           <EmployeeTransfer3
             value={employee}
             onChange={(value) => setEmployee(value)}
           />
         </div>
-
-        {/* SIM Card Details Table */}
         <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 8px 0' }}>SIM Card Details</div>
-        <div style={ui.tableWrapper}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
+          <div style={{ ...ui.tableWrapper, maxWidth: 1500, margin: '0 0 40px 0' }}>
+            <table style={{ width: "auto", minWidth: 1500, borderCollapse: "collapse", margin: '0 auto' }}>
             <thead>
               <tr style={{ background: "rgb(239, 246, 255)" }}>
-                <th style={{ textAlign: "center", padding: "16px 12px", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 700, fontSize: 14 }}>Mobile No</th>
-                <th style={{ textAlign: "center", padding: "16px 12px", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 700, fontSize: 14 }}>Connection Type</th>
-                <th style={{ textAlign: "center", padding: "16px 12px", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 700, fontSize: 14 }}>Validity Date</th>
+                <th style={{ textAlign: "center", width: 200, padding: "12px 0", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 600, fontSize: 14 }}>Mobile No</th>
+                <th style={{ textAlign: "center", width: 900, padding: "12px 0", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 600, fontSize: 14 }}>Connection Type</th>
+                <th style={{ textAlign: "center", width: 350, padding: "12px 0", background: "rgb(239, 246, 255)", color: "#222", fontWeight: 600, fontSize: 14 }}>Validity Date</th>
               </tr>
             </thead>
             <tbody>

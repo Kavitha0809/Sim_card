@@ -14,7 +14,6 @@ function App() {
       <Routes>
         <Route path="/Employee_Initiate1" element={<Employee_Initiate1 />} />
         <Route path="/TransferApproval" element={<TransferApproval />} />
-
         <Route path="/Report1" element={<Report1 />} />
         <Route path="/Report2" element={<Report2 />} />
         <Route path="/Employee_Initiate2" element={<Employee_Initiate2 />} />

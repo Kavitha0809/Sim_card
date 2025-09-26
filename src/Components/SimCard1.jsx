@@ -137,30 +137,10 @@ const SimCard1 = ({ data = defaultData, onSelectionChange }) => {
   }
 
   return (
-    <div style={ui.container}>
-      <div style={ui.greySection}>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            marginBottom: "24px",
-          }}
-        >
-          <div
-            style={{
-              fontSize: "18px",
-              fontWeight: "700",
-              color: "#101928",
-              textAlign: "left",
-            }}
-          >
-            SIM Card Transfer
-          </div>
-
-        </div>
-
-        <InitiationType />
+	<div style={ui.container}>
+	  <div style={ui.greySection}>
+		{/* Removed SIM Card Transfer heading */}
+		<InitiationType />
 
   <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 8px 0' }}>SIM Card Details</div>
   <div style={ui.tableWrapper}>
