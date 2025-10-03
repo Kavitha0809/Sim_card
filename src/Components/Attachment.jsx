@@ -3,9 +3,9 @@ import styles from "../styles/Initiate_page_Styles/Attachment.module.css";
 import pdfIcon from "../assets/svg/pdf.svg";
 import sheetIcon from "../assets/svg/sheet.svg";
 
-const Attachment = () => {
+const Attachment = ({style}) => {
   return (
-    <div className={styles.attachmentFrame}>
+    <div className={styles.attachmentFrame} style={style}>
       <div className={styles.title}>Attachment</div>
       <div className={styles.attachmentBox}>
         <div className={styles.pdfIconWrap}>

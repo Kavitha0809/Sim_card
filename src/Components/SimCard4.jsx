@@ -44,10 +44,9 @@ const ui = {
     color: "#6B7280",
   },
   tableWrapper: {
-    border: "1px solid #E5E7EB",
-    borderRadius: 8,
-    overflow: "hidden",
-    background: "#fff",
+  border: "1px solid #E5E7EB",
+  overflow: "hidden",
+  background: "#fff",
   },
   theadRow: { background: "transparent", borderBottom: "1px solid #E5E7EB" },
   th: {
@@ -75,9 +74,9 @@ const ui = {
   tdRadio: { width: 56, textAlign: "center" },
   issuedCell: { textAlign: "center", color: "#1976d2", fontWeight: 600 },
   greySection: {
+    marginLeft: "32px",
     background: "#f9fafb",
     padding: "24px",
-    borderRadius: "8px",
     marginTop: "10px",
   },
 };

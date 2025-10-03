@@ -29,11 +29,10 @@ const ui = {
   },
   tableWrapper: {
     border: "1px solid #E5E7EB",
-    borderRadius: 8,
     overflow: "hidden",
     background: "#fff",
     paddingLeft: 0,
-    marginLeft: 0,
+    marginLeft: "32px",
   },
   theadRow: { background: "transparent", borderBottom: "1px solid #E5E7EB" },
   th: {
@@ -52,10 +51,9 @@ const ui = {
     fontSize: 14,
   },
   greySection: {
-    background: "#f9fafb",
-    padding: "24px",
-    borderRadius: "8px",
-    marginTop: "10px",
+  background: "#f9fafb",
+  padding: "24px",
+  marginTop: "10px",
   },
 };
 

@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/PE&O_SPOC_Confirmation/RequiredInfo.css";
 import requiredInfoIcon from "../assets/svg/requiredinfo.svg";
 
-const RequiredInfo = ({ onClick, className = "" }) => {
+const RequiredInfo = ({ onClick, className = "", style }) => {
   return (
-    <div className={`required-info ${className}`} onClick={onClick}>
+    <div className={`required-info ${className}`} onClick={onClick} style={style}>
       <img
         src={requiredInfoIcon}
         alt="Required Information"

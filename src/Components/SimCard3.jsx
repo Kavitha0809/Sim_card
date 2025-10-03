@@ -27,10 +27,9 @@ const ui = {
     color: "#6B7280",
   },
   tableWrapper: {
-    border: "1px solid #E5E7EB",
-    borderRadius: 8,
-    overflow: "hidden",
-    background: "#fff",
+  border: "1px solid #E5E7EB",
+  overflow: "hidden",
+  background: "#fff",
   },
   theadRow: { background: "transparent", borderBottom: "1px solid #E5E7EB" },
   th: {
@@ -49,9 +48,9 @@ const ui = {
     fontSize: 14,
   },
   greySection: {
+    marginLeft: "32px",
     background: "#f9fafb",
     padding: "24px",
-    borderRadius: "8px",
     marginTop: "10px",
   },
 };
@@ -78,7 +77,7 @@ const SimCard3 = ({ data = defaultData, onSelectionChange }) => {
   return (
     <div style={ui.container}>
       <div style={ui.greySection}>
-        <InitiationTypeReport1 />
+      <InitiationTypeReport1 style={{ marginTop: '-10px', marginBottom: '33px' }} />
         <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 8px 0' }}>SIM Card Details</div>
         <div style={{ marginTop: 24, marginBottom: 24 }}>
           <EmployeeTransfer3

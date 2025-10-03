@@ -18,8 +18,9 @@
 
 .subHeader {
   color: #111827;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 650;
+  font-size: 16px;
+  margin-left: -40px;
   margin-top: 16px;
   margin-bottom: 12px;
 }
@@ -27,7 +28,7 @@
 .fieldGroup {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 16px;
+  margin-bottom: 33px;
 }
 
 .label {
@@ -36,7 +37,7 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 8px;
-  margin-left: -12px;
+  margin-left: -22px;
 }
 
 .inputFrame {
@@ -51,7 +52,8 @@
 
 .input {
   appearance: none;
-  border: 2px solid #d0d5dd;
+  border: 1.59px solid #d0d5dd;
+  border-radius: 6px;
   outline: none;
   flex: 1 1 auto;
   padding: 0 0 0 16px;
@@ -67,7 +69,7 @@
 .input::placeholder {
   
   color: #101928;
-  font-family: "Samsung InterFace", "Inter", sans-serif;
+  font-family: "Samsung InterFace";
   font-size: 16px;
   font-weight: 400;
 }

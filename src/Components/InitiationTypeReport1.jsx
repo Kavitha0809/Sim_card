@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Initiate_page_Styles/InitiationType.module.css";
 
-const InitiationTypeReport1 = () => {
+const InitiationTypeReport1 = ({ style }) => {
   // Report1 version always has Individual selected and Bulk disabled
   const report1Styles = {
     individualRadio: {
@@ -26,7 +26,7 @@ const InitiationTypeReport1 = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style = {style}>
       <div className={styles.label}>Initiation Type</div>
       <div className={styles.optionsRow}>
         <div

@@ -1,0 +1,35 @@
+.checkboxWrapper {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkboxInput {
+  opacity: 0;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.customCheckbox {
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1.5px solid #36A8DE;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+}
+.checkboxInput:checked + .customCheckbox {
+  background: #36A8DE;
+  border-color: #36A8DE;
+}
+.customCheckbox svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}

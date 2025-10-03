@@ -73,8 +73,8 @@ const State3 = () => {
   return (
     <div className="avatars-container">
       <Header
-        breadcrumb="My Workspace > Spot Award"
-        title="Spot Award Request - (Initiate)"
+        breadcrumb="My Workspace > SIM Card Transfer"
+        title="SIM Card Transfer - Report"
         onBackClick={handleBackClick}
         onClockClick={handleClockClick}
       />

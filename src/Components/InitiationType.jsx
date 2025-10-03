@@ -8,8 +8,15 @@ const InitiationType = ({ onChange, value = "Individual" }) => {
   const pathname = (location?.pathname || "").toLowerCase();
   const normalized = pathname.replace(/[^a-z0-9]/g, "");
   const isEmployeeInitiate2 = normalized.includes("employeeinitiate2");
+  const isReport1 = normalized.includes("report1");
 
-  const [selected, setSelected] = useState(isEmployeeInitiate2 ? "Bulk" : value);
+  const [selected, setSelected] = useState(isReport1 ? "Individual" : (isEmployeeInitiate2 ? "Bulk" : value));
+  useEffect(() => {
+    if (isReport1 && selected !== "Individual") {
+      setSelected("Individual");
+      if (onChange) onChange("Individual");
+    }
+  }, [isReport1]);
 
   useEffect(() => {
     // Ensure Bulk is selected when on /employeeinitiate2
@@ -20,6 +27,7 @@ const InitiationType = ({ onChange, value = "Individual" }) => {
   }, [isEmployeeInitiate2]);
 
   const handleSelect = (type) => {
+  if (isReport1) return; // Prevent selection change on /report1
   setSelected(type);
   if (onChange) onChange(type);
   };
@@ -29,9 +37,13 @@ const InitiationType = ({ onChange, value = "Individual" }) => {
   const greyDisabled = "#A9A8AA"; // disabled grey
 
   return (
-    <div className={styles.container}>
-      <div className={styles.label}>Initiation Type</div>
-      <div className={styles.optionsRow}>
+    <div style={{ position: 'relative' }}>
+      {window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") ? (
+        <div className={styles.label} style={{ position: 'absolute', top: '-20px', left: 0, background: 'transparent', zIndex: 2, paddingLeft: 0 }}>Initiation Type</div>
+      ) : (
+        <div className={styles.label}>Initiation Type</div>
+      )}
+      <div className={styles.optionsRow} style={window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") ? { marginTop: '-20px', background: '#f9fafb', borderRadius: '10px', padding: '16px 0 16px 0' } : {}}>
         <div
           className={`${styles.option} ${selected === "Individual" ? styles.selected : ""}`}
           onClick={() => handleSelect("Individual")}
@@ -51,10 +63,10 @@ const InitiationType = ({ onChange, value = "Individual" }) => {
         </div>
         <div
           className={`${styles.option} ${selected === "Bulk" ? styles.selected : ""}`}
-          onClick={() => handleSelect("Bulk")}
+          onClick={undefined}
           style={
-            isEmployeeInitiate2
-              ? { cursor: "default" }
+            isEmployeeInitiate2 || isReport1
+              ? { cursor: "default", opacity: 0.5, pointerEvents: "none" }
               : undefined
           }
         >

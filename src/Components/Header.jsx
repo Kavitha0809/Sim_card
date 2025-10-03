@@ -14,14 +14,12 @@ const Header = ({
   const safeTitle = typeof title === "string" ? title : "";
   return (
     <div className="header-section">
-      {breadcrumb && (
-        <div
-          className="breadcrumb"
-          onClick={() => onBackClick && onBackClick()}
-        >
-          {breadcrumb}
-        </div>
-      )}
+      <div
+        className="breadcrumb"
+        onClick={() => onBackClick && onBackClick()}
+      >
+        My Workspace &gt; SIM Card Transfer
+      </div>
 
       <div className="main-header">
         {showBackArrow && (

@@ -41,7 +41,7 @@ const ui = {
   },
   tableWrapper: {
     border: "1px solid #E5E7EB",
-    borderRadius: 8,
+  borderRadius: 0,
     overflow: "hidden",
     background: "#fff",
   },
@@ -73,8 +73,9 @@ const ui = {
   greySection: {
     background: "#f9fafb",
     padding: "24px",
-    borderRadius: "8px",
+    borderRadius: "0px",
     marginTop: "10px",
+  marginLeft: "32px",
   },
 };
 
@@ -142,7 +143,7 @@ const SimCard1 = ({ data = defaultData, onSelectionChange }) => {
 		{/* Removed SIM Card Transfer heading */}
 		<InitiationType />
 
-  <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '24px 0 8px 0' }}>SIM Card Details</div>
+  <div style={{ fontWeight: 700, fontSize: 16, color: '#101928', margin: '40px 0 8px 0' }}>SIM Card Details</div>
   <div style={ui.tableWrapper}>
           <table style={{ width: "100%", borderCollapse: "collapse" }}>
             <thead>

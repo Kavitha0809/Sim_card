@@ -33,8 +33,7 @@ const SimCardForm1 = ({ onSubmit }) => {
           style={{
             padding: "8px 16px",
             borderRadius: 6,
-            marginLeft: -32,
-            marginRight: -32,
+            
           }}
         >
           Employee to Transfer
@@ -78,41 +77,18 @@ const SimCardForm1 = ({ onSubmit }) => {
               onChange={(e) => setEmployeeName(e.target.value)}
               aria-label="Employee Name"
               style={{
-                paddingRight: employeeName ? 60 : 34,
+                paddingRight: window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") ? 0 : (employeeName ? 60 : 34),
                 width: window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") ? '100%' : '100%',
                 minWidth: 0,
                 maxWidth: '100%'
               }}
             />
-            <span style={{ position: 'absolute', right: employeeName ? 34 : 10, top: '50%', transform: 'translateY(-50%)', display: 'flex', alignItems: 'center' }}>
+            <span style={{ position: 'absolute', right: window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") ? 10 : (employeeName ? 34 : 10), top: '50%', transform: 'translateY(-50%)', display: 'flex', alignItems: 'center' }}>
               {window.location.pathname.toLowerCase().replace(/[^a-z0-9]/g, "").includes("employeeinitiate1") && (
-                <img src={close1Icon} alt="close1" style={{ width: 14, height: 14, opacity: 0.7, marginRight: 8 }} />
+                <img src={close1Icon} alt="close1" style={{ width: 14, height: 14, opacity: 0.7, marginRight: 8, cursor: 'pointer' }} onClick={() => setEmployeeName("")} />
               )}
               <img src={searchIcon} alt="search" style={{ width: 18, height: 18, opacity: 0.7 }} />
             </span>
-            {employeeName && (
-              <button
-                type="button"
-                onClick={() => setEmployeeName("")}
-                style={{
-                  position: 'absolute',
-                  right: 10,
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  background: 'none',
-                  border: 'none',
-                  padding: 0,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-                tabIndex={-1}
-                aria-label="Clear"
-              >
-                <img src={closeIcon} alt="clear" style={{ width: 16, height: 16, opacity: 0.7 }} />
-              </button>
-            )}
           </div>
         </div>
         {/* Comment section */}
